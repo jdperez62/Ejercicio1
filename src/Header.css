@@ -1,0 +1,72 @@
+/* src/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #282c34; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+.logo {
+    height: 40px; /* Ajusta el tamaño del logo por defecto */
+    transition: transform 0.5s, box-shadow 0.3s; /* Suaviza la transición */
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)); /* Asegura que no haya sombra predeterminada */
+}
+
+.rotate-y {
+    animation: rotate-y 1s infinite linear; /* Rotación continua sobre el eje Y */
+}
+
+.rotate-x {
+    animation: rotate-x 1s infinite linear; /* Rotación continua sobre el eje X */
+}
+
+@keyframes rotate-y {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotate-x {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+.title {
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible */
+    text-align: center; /* Centra el texto */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones en la línea */
+    gap: 10px; /* Espacio entre botones */
+    padding: 10px; /* Espacio alrededor de los botones */
+}
+
+.button-container button {
+    padding: 8px 12px;
+    background-color: #025815; /* Color de fondo para los botones */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ca6e05;
+}
+
+.button-container button:hover {
+    background-color: #09b617; /* Color al pasar el mouse */
+    color: rgb(111, 138, 138);
+}
+
+/* Efecto de sombra en hover para los logos */
+.logo:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Sombra blanca alrededor del logo */
+}

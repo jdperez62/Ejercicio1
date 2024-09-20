@@ -1,7 +1,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  line-height: 1.0;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,34 +13,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
+  margin: 1px;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 10vh;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.vite-react {
+  color: rgb(28, 223, 28);
+  background-color: #1a1a1a;
 }
-h2 {
-  color: #1269b6;
+h1 {  
+    background-color: #c2730c ; /* Cambia este valor por el color que desees */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 2px solid ;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -50,7 +43,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #0e13a5;
 }
 button:focus,
 button:focus-visible {
@@ -60,12 +53,12 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: #f0eee9;
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #b1a9a9;
   }
 }
